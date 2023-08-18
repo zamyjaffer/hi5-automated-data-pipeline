@@ -7,9 +7,28 @@ from svm_classification import perform_svm_classification
 from results import plot_results
 import pandas as pd
 import warnings
+import os
 warnings.filterwarnings("ignore", category=UserWarning, module="seaborn")
 
 def main():
+
+    # Define the folder names
+    output_folder = 'outputs'
+    visualizations_folder = os.path.join(output_folder, 'visualisations')
+    results_folder = os.path.join(output_folder, 'results')
+
+    # Check if the 'outputs' folder already exists
+    if not os.path.exists(output_folder):
+        # Create the 'outputs' folder
+        os.mkdir(output_folder)
+        
+        # Create the 'visualisations' and 'results' folders inside 'outputs'
+        os.mkdir(visualizations_folder)
+        os.mkdir(results_folder)
+        print("Folder structure created successfully.")
+    else:
+        print("'outputs' folder already exists.")
+
     # Data Ingestion
     folder_path = 'code\data'
     all_data = ingest_csvs(folder_path)
