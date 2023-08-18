@@ -26,10 +26,7 @@ This project involves the analysis and modeling of experimental trial data using
 - kmeans_clustering.py: Contains the K-means clustering algorithm.
 - svm_classification.py: Contains the SVM classification algorithm.
 - requirements.txt: The file that lists all package requirements to run this project
-- readme.txt: This file, providing an overview of the project.
-- extractedData/: Folder containing the raw experimental data and demographic information.
-- visualisations/: Folder to save the generated visualization plots.
-- model_results/: Folder to save the results of clustering and classification models.
+- readme.txt: This file provides an overview of the project.
 
 3. Getting Started:
 3.1. Dependencies:
@@ -43,7 +40,7 @@ This project involves the analysis and modeling of experimental trial data using
    - psycopg2-binary (for PostgreSQL connection)
    
 3.2. Running the Project:
-   1. Place your raw experimental data CSV files (as explorted from the Hi5 platform) in the 'data/' folder.
+   1. Create a new folder in 'hi5-automated-data-pipeline' called 'data' and place your raw experimental data CSV files (as exported from the Hi5 platform) in the folder.
    2. Update the database configuration in 'main.py' (database_config dictionary).
    3. In your terminal, navigate to the folder you have downloaded the files to.
    4. Run the following line to create the virtual environment:
@@ -52,7 +49,7 @@ This project involves the analysis and modeling of experimental trial data using
          '.\demo-venv\Scripts\activate
    6. Install the package requirements with the following line:
          'pip install -r .\requirements.txt'
-   7. Run the pipieline using 'main.py' with the following line:
+   7. Run the pipeline using 'main.py' with the following line:
          'python code/main.py'
 
 4. Custom Functions:
