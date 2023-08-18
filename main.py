@@ -13,7 +13,7 @@ warnings.filterwarnings("ignore", category=UserWarning, module="seaborn")
 def main():
 
     # Define the folder names
-    output_folder = 'outputs'
+    output_folder = 'hi5-automated-data-pipeline/outputs'
     visualizations_folder = os.path.join(output_folder, 'visualisations')
     results_folder = os.path.join(output_folder, 'results')
 
@@ -48,7 +48,7 @@ def main():
 
     # Load demographic data from Excel file
     table_name = 'demographicData'
-    demographic_data = pd.read_excel('extractedData\Demographics.xlsx')
+    demographic_data = pd.read_excel('hi5-automated-data-pipeline/data/Demographics.xlsx')
     # Send demographic data to SQL database
     send_to_sql(demographic_data, table_name, database_config)
 
