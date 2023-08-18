@@ -114,7 +114,7 @@ def format_data(dataframes):
 
     # Save the new long-format CSV
     with tqdm(total=1, desc="Saving New Data Format") as pbar:
-        df_long.to_csv('data/long_format.csv', index=False)
+        df_long.to_csv('hi5-automated-data-pipeline/data/long_format.csv', index=False)
         pbar.update(1)
 
     print("Data Formatting Complete.\n")
