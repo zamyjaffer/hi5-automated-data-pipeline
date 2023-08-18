@@ -30,7 +30,7 @@ def main():
         print("'outputs' folder already exists.")
 
     # Data Ingestion
-    folder_path = 'hi5-automated-data-pipeline\data'
+    folder_path = 'hi5-automated-data-pipeline/data'
     all_data = ingest_csvs(folder_path)
 
     # Data Processing
