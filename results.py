@@ -66,7 +66,7 @@ def plot_results(svm_model, kmeans_model, dataset):
     # Adjust layout
     plt.suptitle("Modelling Results - Mean RMSE vs RMSE Variability", fontsize=16)
     plt.tight_layout(rect=[0, 0.07, 1, 1])  # Adjust the bottom margin for classification report
-    plt.savefig('code/plots/modelling_results.png')
+    plt.savefig('hi5-automated-data-pipeline/outputs/results/modelling_results.png')
     plt.close()
 
     print("Results Have Been Successfully Saved.\n")
