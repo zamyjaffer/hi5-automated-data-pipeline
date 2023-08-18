@@ -1,0 +1,74 @@
+Project Title: Data Analysis and Modeling for Experimental Trial Data
+
+Table of Contents:
+1. Introduction
+2. Folder Structure
+3. Getting Started
+   3.1. Dependencies
+   3.2. Running the Project
+4. Custom Functions
+   4.1. Data Ingestion
+   4.2. Data Processing
+   4.3. Exploratory Data Analysis
+   4.4. Modelling Metrics
+5. Results
+6. Conclusion
+7. License
+
+1. Introduction:
+This project involves the analysis and modeling of experimental trial data using Python. The goal is to process raw trial data, extract meaningful metrics, perform exploratory data analysis, and build predictive models to classify trial pairings.
+
+2. Folder Structure:
+- main.py: The main script that orchestrates the entire project.
+- data_processing.py: Contains functions for data processing, feature engineering, and creating relevant metrics.
+- exploratory_data_analysis.py: Contains functions for visualizing and analyzing data patterns.
+- modelling_metrics.py: Contains functions for generating metrics suitable for modeling.
+- kmeans_clustering.py: Contains the K-means clustering algorithm.
+- svm_classification.py: Contains the SVM classification algorithm.
+- requirements.txt: The file that lists all package requirements to run this project
+- readme.txt: This file, providing an overview of the project.
+- extractedData/: Folder containing the raw experimental data and demographic information.
+- visualisations/: Folder to save the generated visualization plots.
+- model_results/: Folder to save the results of clustering and classification models.
+
+3. Getting Started:
+3.1. Dependencies:
+   - Python 3.6+
+   - pandas
+   - numpy
+   - scikit-learn
+   - matplotlib
+   - seaborn
+   - sqlalchemy
+   - psycopg2-binary (for PostgreSQL connection)
+   
+3.2. Running the Project:
+   1. Place your raw experimental data CSV files (as explorted from the Hi5 platform) in the 'data/' folder.
+   2. Update the database configuration in 'main.py' (database_config dictionary).
+   3. In your terminal, navigate to the folder you have downloaded the files to.
+   4. Run the following line to create the virtual environment:
+         'python -m venv ./demo-venv'
+   5. Activate the virtual environment with the following line:
+         '.\demo-venv\Scripts\activate
+   6. Install the package requirements with the following line:
+         'pip install -r .\requirements.txt'
+   7. Run the pipieline using 'main.py' with the following line:
+         'python code/main.py'
+
+4. Custom Functions:
+   - 'data_processing.py': Functions for reading, formatting, and processing data.
+   - 'exploratory_data_analysis.py': Functions for visualizing and analyzing data patterns.
+   - 'modelling_metrics.py': Functions for generating metrics suitable for modeling.
+   - 'kmeans_clustering.py': K-means clustering algorithm.
+   - 'svm_classification.py': Support Vector Machine classification algorithm.
+
+5. Results:
+   The project generates visualisations and classification results in the 'visualisations/' and 'model_results/' folders, respectively.
+
+6. Conclusion:
+This project showcases the entire data analysis and modeling process for experimental trial data. It demonstrates how to read and format data, create meaningful metrics, perform exploratory data analysis, and build clustering and classification models.
+
+7. License:
+This project is licensed under MIT. You are free to use, modify, and distribute this code for educational and non-commercial purposes.
+
+For any questions or inquiries, please contact Zamena at zsjaffer@gmail.com
