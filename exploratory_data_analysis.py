@@ -4,13 +4,13 @@ import pandas as pd
 
 def get_visualisation_data(dataframe):
     """
-    Filter a DataFrame to retrieve data for visualization based on specified conditions.
+    Filter a DataFrame to retrieve data for visualisation based on specified conditions.
 
     Parameters:
         dataframe (pandas.DataFrame): The DataFrame containing the data to be filtered.
 
     Returns:
-        pandas.DataFrame: A filtered DataFrame containing data for visualization.
+        pandas.DataFrame: A filtered DataFrame containing data for visualisation.
     """
     print('Acessing Data for Visualisation')
     # Define the filter conditions
