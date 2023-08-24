@@ -14,7 +14,7 @@ def main():
 
     # Define the folder names
     output_folder = 'outputs'
-    visualizations_folder = os.path.join(output_folder, 'visualisations')
+    visualisations_folder = os.path.join(output_folder, 'visualisations')
     results_folder = os.path.join(output_folder, 'results')
 
     # Check if the 'outputs' folder already exists
@@ -23,7 +23,7 @@ def main():
         os.mkdir(output_folder)
         
         # Create the 'visualisations' and 'results' folders inside 'outputs'
-        os.mkdir(visualizations_folder)
+        os.mkdir(visualisations_folder)
         os.mkdir(results_folder)
         print("Folder structure created successfully.")
     else:
@@ -104,7 +104,7 @@ def main():
     metrics_to_model = ['SPARC', 'RMSE'] 
     modelling_data = generate_modelling_metrics(eda_data, metrics_to_model)
 
-    # Data Normalization
+    # Data Normalisation
     normalised_data = normalise_data(modelling_data)
 
     # K-Means Clustering
