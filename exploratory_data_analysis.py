@@ -49,7 +49,7 @@ def generate_and_save_plots(dataframe):
     plt.title('RMSE Boxplot by Pairing Type for Connected Trials')
     plt.xlabel('Pairing Type')
     plt.ylabel('RMSE')
-    plt.savefig('hi5-automated-data-pipeline/outputs/visualisations/rmse_boxplot.png')
+    plt.savefig('outputs/visualisations/rmse_boxplot.png')
     plt.close()  # Close the plot to avoid overlapping plots
     
     # Calculate average RMSE for each trial and pairing type
@@ -64,7 +64,7 @@ def generate_and_save_plots(dataframe):
     plt.ylabel('RMSE')
     plt.title('RMSE Averaged over Trials')
     plt.legend()
-    plt.savefig('hi5-automated-data-pipeline/outputs/visualisations/rmse_linechart.png')
+    plt.savefig('outputs/visualisations/rmse_linechart.png')
     plt.close()  # Close the plot
     
     # Create and save the SPARC Boxplot by Pairing Type
@@ -73,7 +73,7 @@ def generate_and_save_plots(dataframe):
     plt.title('SPARC Boxplot by Pairing Type for Connected Trials')
     plt.xlabel('Pairing Type')
     plt.ylabel('SPARC')
-    plt.savefig('hi5-automated-data-pipeline/outputs/visualisations/sparc_boxplot.png')
+    plt.savefig('outputs/visualisations/sparc_boxplot.png')
     plt.close()  # Close the plot
     
     # Calculate average SPARC for each trial and pairing type
@@ -88,6 +88,6 @@ def generate_and_save_plots(dataframe):
     plt.ylabel('SPARC')
     plt.title('SPARC Averaged over Trials')
     plt.legend()
-    plt.savefig('hi5-automated-data-pipeline/outputs/visualisations/sparc_linechart.png')
+    plt.savefig('outputs/visualisations/sparc_linechart.png')
     plt.close()  # Close the plot
     print("EDA Plots Successfully Saved.\n")
