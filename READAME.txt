@@ -21,7 +21,7 @@ This project involves the analysis and modeling of experimental trial data using
 2. Folder Structure:
 - main.py: The main script that orchestrates the entire project.
 - data_processing.py: Contains functions for data processing, feature engineering, and creating relevant metrics.
-- exploratory_data_analysis.py: Contains functions for visualizing and analyzing data patterns.
+- exploratory_data_analysis.py: Contains functions for visualising and analysing data patterns.
 - modelling_metrics.py: Contains functions for generating metrics suitable for modeling.
 - kmeans_clustering.py: Contains the K-means clustering algorithm.
 - svm_classification.py: Contains the SVM classification algorithm.
@@ -54,7 +54,7 @@ This project involves the analysis and modeling of experimental trial data using
 
 4. Custom Functions:
    - 'data_processing.py': Functions for reading, formatting, and processing data.
-   - 'exploratory_data_analysis.py': Functions for visualizing and analyzing data patterns.
+   - 'exploratory_data_analysis.py': Functions for visualising and analysing data patterns.
    - 'modelling_metrics.py': Functions for generating metrics suitable for modeling.
    - 'kmeans_clustering.py': K-means clustering algorithm.
    - 'svm_classification.py': Support Vector Machine classification algorithm.
