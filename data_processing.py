@@ -135,7 +135,7 @@ def calculate_measure_metrics(dataframe, fs=1/0.001, padlevel=4, fc=10.0, amp_th
         # Compute the FFT of the movement signal
         Mf = abs(np.fft.fft(movement, nfft))
         
-        # Normalize the FFT values
+        # Normalise the FFT values
         Mf = Mf / max(Mf)
         
         # Find the indices of frequency components within the specified cutoff frequency
