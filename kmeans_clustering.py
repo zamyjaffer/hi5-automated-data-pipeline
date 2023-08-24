@@ -16,7 +16,7 @@ def perform_kmeans_clustering(dataframe, n_clusters=3):
     X = dataframe.iloc[:, 1:] 
     y = dataframe.iloc[:, 0].values
     
-    # Initialize the KMeans model
+    # Initialise the KMeans model
     kmeans = KMeans(n_clusters,
                     init='k-means++',
                     max_iter=300,
