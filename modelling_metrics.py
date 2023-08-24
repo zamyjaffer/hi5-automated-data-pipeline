@@ -64,10 +64,11 @@ def generate_modelling_metrics(dataframe, column_list):
     numerical_features = modelling_data.columns.to_list()
     numerical_features = numerical_features[1:]
     sns.pairplot(modelling_data, vars=numerical_features, hue='pairingtype', markers=["o", "s", "D"])
-    plt.savefig('code/plots/modelling_data_pairplot.png')
+    plt.savefig('outputs/visualisations/modelling_data_pairplot.png')
     plt.close()
+    
     print("Modelling Data Successfully Created.\n")
-    # Return the merged DataFrame
+
     return modelling_data
 
 def normalise_data(dataframe):
