@@ -17,7 +17,7 @@ def perform_svm_classification(dataframe):
     y = dataframe.iloc[:, 0].values
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=0)
     
-    # Initialize the SVM model
+    # Initialise the SVM model
     svm = SVC(kernel='linear', random_state=42)
     
     # Fit the SVM model to the training data
