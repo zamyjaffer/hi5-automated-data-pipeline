@@ -73,13 +73,13 @@ def generate_modelling_metrics(dataframe, column_list):
 
 def normalise_data(dataframe):
     """
-    Normalize the given DataFrame by subtracting mean and dividing by standard deviation.
+    Normalise the given DataFrame by subtracting mean and dividing by standard deviation.
 
     Parameters:
-        dataframe (pandas.DataFrame): The DataFrame containing the data to be normalized.
+        dataframe (pandas.DataFrame): The DataFrame containing the data to be normalised.
 
     Returns:
-        pandas.DataFrame: The normalized DataFrame.
+        pandas.DataFrame: The normalised DataFrame.
     """
     print('Normalising Data for Modelling')
     def norm_set(x: np.ndarray, mu: np.ndarray, sigma: np.ndarray) -> np.ndarray:
@@ -97,7 +97,7 @@ def normalise_data(dataframe):
 
     normalised_data = norm_set(data, mean_data, std_data)
     
-    # Create a DataFrame with normalized columns
+    # Create a DataFrame with normalised columns
     output_data = pd.DataFrame(normalised_data, columns=columns_to_normalise)
     
     # Insert the 'pairingtype' column at the front of the DataFrame
